@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+:root {
+    --white: #fff;
+    --ash: #eee;
+    --content: #333;
+    --pastelGreen: #1de9b6;
+    --orange: #FB8C00;
+    --skyBlue: #29B6F6;
+    --blue: #2196F3;
+    --violet: #7C4DFF;
+    --fiolek: #AB47BC;
+    --magenta: #F50057;
+    --gold: #FFC107;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--content);
+}
+/* class color */
+.content { background-color: var(--content); }
+.pastel-green { background-color: var(--pastelGreen); }
+.orange { background-color: var(--orange); }
+.sky-blue { background-color: var(--skyBlue); }
+.blue { background-color: var(--blue); }
+.violet { background-color: var(--violet); }
+.fiolek { background-color: var(--fiolek); }
+.magenta { background-color: var(--magenta); }
+.gold { background-color: var(--gold); }
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0 50px;
+}
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.section-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.box-wrapper { 
+    display: grid; /* parent */
+    width: 100%;
+    height: 100px;
+    background-color: var(--ash);
+    counter-reset: iteration;
+    border-right: 1px solid var(--content);
+}
+.box {
+    width: 50px;
+    height: 50px;
+    color: var(--white);  
+    text-align: center;
+    line-height: 50px;
+}
+.box::after {
+    content: counter(iteration);
+    counter-increment: iteration;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
