@@ -1,0 +1,125 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Grid Training Page</title>
+    </head>
+    <body>
+        <nav class="page-nav">
+            <ul>
+                <li>
+                    <a href="grid-columns.html">Columns</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1 class="page-title">Grid Rows Training Page</h1>
+
+            <div class="box-groups">
+                <div class="box-group">
+                    <h2 class="section-title">
+                        grid-template-rows: 100px 100px
+                    </h2>
+                    <div class="box-wrapper grid-template-rows">
+                        <div class="box pastel-green"></div>
+                        <div class="box sky-blue"></div>
+                        <div class="box violet"></div>
+                        <div class="box fiolek"></div>
+                    </div>
+                </div>
+
+                <div class="box-group">
+                    <h2 class="section-title">
+                        grid-template-rows: 100px 100px & grid-auto-rows: 50px;
+                    </h2>
+                    <div
+                        class="box-wrapper grid-template-rows"
+                        style="grid-auto-rows: 50px"
+                    >
+                        <div class="box pastel-green"></div>
+                        <div class="box sky-blue"></div>
+                        <div class="box violet"></div>
+                        <div class="box fiolek"></div>
+                    </div>
+                </div>
+
+                <div class="box-group">
+                    <h2 class="section-title">
+                        grid-template-rows: 100px 100px & grid-row-gap: 10px
+                    </h2>
+                    <div class="box-wrapper grid-template-rows grid-row-gap">
+                        <div class="box pastel-green"></div>
+                        <div class="box sky-blue"></div>
+                        <div class="box violet"></div>
+                        <div class="box fiolek"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-groups">
+                <div class="box-group">
+                    <h2 class="section-title">
+                        grid-template-rows: repeat(2, 100px)
+                    </h2>
+                    <div class="box-wrapper grid-template-rows-repeat-1">
+                        <div class="box pastel-green"></div>
+                        <div class="box sky-blue"></div>
+                        <div class="box violet"></div>
+                        <div class="box fiolek"></div>
+                    </div>
+                </div>
+                <div class="box-group">
+                    <h2 class="section-title">
+                        grid-template-rows: repeat(2, 100px) repeat(2, 50px) 1fr
+                        2fr 25px
+                    </h2>
+                    <div class="box-wrapper grid-template-rows-repeat-2">
+                        <div class="box pastel-green"></div>
+                        <div class="box sky-blue"></div>
+                        <div class="box violet"></div>
+                        <div class="box fiolek"></div>
+                        <div class="box magenta"></div>
+                        <div class="box gold"></div>
+                        <div class="box pastel-green"></div>
+                    </div>
+                </div>
+                <div class="box-group">
+                    <h2 class="section-title">
+                        grid-template-rows: repeat(5, minmax(50px, 100px))
+                    </h2>
+                    <div class="box-wrapper grid-template-rows-repeat-3">
+                        <div class="box pastel-green"></div>
+                        <div class="box sky-blue"></div>
+                        <div class="box violet"></div>
+                        <div class="box magenta"></div>
+                        <div class="box gold"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-groups">
+                <div class="box-group">
+                    <h2 class="section-title">
+                        grid-template-columns: 100px 100px 50px & grid-row: 2 /
+                        4 na elemencie nr.1 & grid-row: span 3 na el. nr. 7
+                    </h2>
+                    <div class="box-wrapper grid-template-columns">
+                        <div class="box pastel-green grid-row-line"></div>
+                        <div class="box sky-blue"></div>
+                        <div class="box violet"></div>
+                        <div class="box fiolek"></div>
+                        <div class="box magenta"></div>
+                        <div class="box gold"></div>
+                        <div class="box violet grid-row"></div>
+                        <div class="box sky-blue"></div>
+                        <div class="box violet"></div>
+                        <div class="box fiolek"></div>
+                        <div class="box magenta"></div>
+                        <div class="box gold"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
